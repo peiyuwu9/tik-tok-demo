@@ -1,0 +1,41 @@
+.video-footer {
+  position: relative;
+  color: white;
+  bottom: 100px;
+  display: flex;
+  padding: 10px;
+}
+
+.video-footer-text {
+  flex: 1;
+}
+
+.video-footer-text > h3 {
+  margin-bottom: 10px;
+}
+
+.video-footer-record {
+  animation: spinTheRecord infinite 5s linear;
+  height: 40px;
+  filter: invert(1);
+  position: relative;
+  top: 35px;
+}
+
+.video-footer-ticker {
+  transform: translateX(-5px);
+}
+
+.video-footer-ticker > .ticker {
+  transform: translate(30px, -23px);
+  width: 60%;
+}
+
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
