@@ -14,11 +14,10 @@ function App() {
   }, []);
 
   return (
-    // BEM convention
     <div className="app">
       <div className="app-videos">
         {videos.map(
-          ({ channel, detail, likes, messages, shares, song, url }) => (
+          ({ channel, detail, likes, messages, shares, song, url }, index) => (
             <Video
               channel={channel}
               detail={detail}
@@ -27,6 +26,7 @@ function App() {
               shares={shares}
               song={song}
               url={url}
+              key={index}
             />
           )
         )}
