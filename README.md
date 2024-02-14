@@ -5,8 +5,8 @@ An tik-tok like app built on React.js
 Create a app to practice React.js
 
 ## Technologies Used and Why
-**React.js** for website rendering
-***Firebse** for database and hosting
+**React.js** for website rendering  
+**Firebse** for database and hosting
 
 ## How to Use
 1. Run ```firebase init``` for new project and select build as public directory
