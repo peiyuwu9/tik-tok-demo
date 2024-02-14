@@ -1,5 +1,5 @@
 # Tik Tok Demo
-An tik-tok like app built on React.js
+An Tik-Tok like app built on React.js
 
 ## Motivation
 Create a app to practice React.js
