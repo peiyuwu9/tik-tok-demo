@@ -1,5 +1,7 @@
 .video-sidebar {
-  transform: translate(357px, -400px);
+  position: absolute;
+  bottom: 80px;
+  right: 5%;
   width: 24px;
   color: white;
 }

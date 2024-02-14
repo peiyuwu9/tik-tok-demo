@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import db from "./firebase";
+
 import Video from "./components/Video";
 import "./App.css";
-
-import db from "./firebase";
 
 function App() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    db.collection("videos").onSnapshot((snapshot) => {
-      setVideos(snapshot.docs.map((doc) => doc.data()));
-    });
+    const fetchVideos = async () => {
+      const querySnapshot = await getDocs(collection(db, "videos"));
+      setVideos(querySnapshot.docs.map((doc) => doc.data()));
+    };
+    fetchVideos();
   }, []);
 
   return (

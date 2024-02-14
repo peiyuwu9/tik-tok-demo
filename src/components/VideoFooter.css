@@ -1,7 +1,8 @@
 .video-footer {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
   color: white;
-  bottom: 100px;
   display: flex;
   padding: 10px;
 }
@@ -11,6 +12,10 @@
 }
 
 .video-footer-text > h3 {
+  margin-bottom: 10px;
+}
+
+.video-footer-text > p {
   margin-bottom: 10px;
 }
 
